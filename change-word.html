@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Change The Words Plugin Demo</title>
+</head>
+<body>
+<div id="changethewords"> I love <span data-id="1">JavaScript</span> <span data-id="2">HTML5</span> <span data-id="3">CSS3</span> </div>
+
+<!-- jQuery --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<!-- Changewords main js --> 
+<script src="http://www.jqueryscript.net/demo/CSS3-Animated-Text-Rotator-Carousel-Plugin-Changethewords-js/jquery.changethewords.js"></script> 
+<script type="text/javascript">
+    $(function() {
+      $("#changethewords").changeWords({
+        time: 2000,
+        selector: "span"
+      });
+    });
+  </script>
+</body>
+</html>
